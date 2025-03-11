@@ -17,4 +17,12 @@ public class Main {
         context.setPaymentStrategy(new CreditCard());
         context.makePayment(7200);
     }
+
+    /*
+    🔹 With Strategy Pattern (Solution)
+        ✅ Removes conditional logic
+        ✅ Allows dynamic selection of payment methods
+        ✅ Follows SOLID principles (Open-Closed Principle)
+        ✅ Improves flexibility & maintainability
+     */
 }

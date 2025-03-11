@@ -17,4 +17,11 @@ public class PaymentContext {
              System.out.println("Invalid Payment Strategy...");
          }
     }
+
+    /*
+    🔹 Without Strategy Pattern (Problems)
+        ❌ Uses bulky if-else or switch-case statements
+        ❌ Violates Open-Closed Principle (hard to extend)
+        ❌ Code becomes rigid and difficult to maintain
+     */
 }
