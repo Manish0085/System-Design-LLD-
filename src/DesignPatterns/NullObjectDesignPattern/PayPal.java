@@ -1,20 +1,14 @@
 package DesignPatterns.NullObjectDesignPattern;
 
-public class PayPal implements PaymentMethod{
-
-    private String phone;
-
-    public PayPal(String phone) {
-        this.phone = phone;
-    }
+public class PayPal implements PaymentMethod {
+    private String email;
+    public PayPal(String email) { this.email = email; }
 
     @Override
     public void pay(double amount) {
-        System.out.println("Paid " + amount + " successfully using Credit Card: " + phone);
+        System.out.println("Paid " + amount + " successfully using PayPal: " + email);
     }
 
     @Override
-    public boolean isNull() {
-        return false;
-    }
+    public boolean isNull() { return false; }
 }

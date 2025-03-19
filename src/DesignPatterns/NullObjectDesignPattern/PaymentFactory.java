@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PaymentFactory {
-
     private static final Map<String, PaymentMethod> paymentMethods = new HashMap<>();
 
     static {

@@ -1,12 +1,8 @@
 package DesignPatterns.NullObjectDesignPattern;
 
-public class CreditCard implements PaymentMethod{
-
+public class CreditCard implements PaymentMethod {
     private String cardNumber;
-
-    public CreditCard(String cardNumber) {
-        this.cardNumber = cardNumber;
-    }
+    public CreditCard(String cardNumber) { this.cardNumber = cardNumber; }
 
     @Override
     public void pay(double amount) {
@@ -14,7 +10,5 @@ public class CreditCard implements PaymentMethod{
     }
 
     @Override
-    public boolean isNull() {
-        return false;
-    }
+    public boolean isNull() { return false; }
 }
